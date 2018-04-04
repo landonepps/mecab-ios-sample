@@ -41,4 +41,5 @@ Use the following command to get the mecab-ios submodule as well.
 11. Clean and build.
 
 These instrucations are based on the ones from https://github.com/lxmmxl56/iPhone-libmecab
+
 Special thanks to [Joseph Toronto on Stack Overflow](http://stackoverflow.com/a/37891729/3295398) for coming up with these steps.
