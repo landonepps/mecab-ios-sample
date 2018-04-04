@@ -12,8 +12,8 @@
 		440E7D3120748A190003882E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D2F20748A190003882E /* Main.storyboard */; };
 		440E7D3320748A1A0003882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D3220748A1A0003882E /* Assets.xcassets */; };
 		440E7D3620748A1A0003882E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D3420748A1A0003882E /* LaunchScreen.storyboard */; };
-		4491D15F20748C10004A0BC5 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491D15B20748C10004A0BC5 /* Node.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4491D16020748C10004A0BC5 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491D15D20748C10004A0BC5 /* Mecab.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4491D15F20748C10004A0BC5 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491D15B20748C10004A0BC5 /* Node.m */; };
+		4491D16020748C10004A0BC5 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491D15D20748C10004A0BC5 /* Mecab.m */; };
 		4491D16320748C5F004A0BC5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D16220748C5F004A0BC5 /* libiconv.tbd */; };
 		4491D17E20748E6A004A0BC5 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17520748E6A004A0BC5 /* rewrite.def */; };
 		4491D17F20748E6A004A0BC5 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17620748E6A004A0BC5 /* left-id.def */; };
@@ -452,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
 				HEADER_SEARCH_PATHS = "mecab-ios/**";
@@ -474,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
 				HEADER_SEARCH_PATHS = "mecab-ios/**";
