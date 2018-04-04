@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		440E7D2C20748A190003882E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E7D2B20748A190003882E /* AppDelegate.swift */; };
+		440E7D2E20748A190003882E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E7D2D20748A190003882E /* ViewController.swift */; };
+		440E7D3120748A190003882E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D2F20748A190003882E /* Main.storyboard */; };
+		440E7D3320748A1A0003882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D3220748A1A0003882E /* Assets.xcassets */; };
+		440E7D3620748A1A0003882E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D3420748A1A0003882E /* LaunchScreen.storyboard */; };
+		4491D15F20748C10004A0BC5 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491D15B20748C10004A0BC5 /* Node.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4491D16020748C10004A0BC5 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491D15D20748C10004A0BC5 /* Mecab.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4491D16320748C5F004A0BC5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D16220748C5F004A0BC5 /* libiconv.tbd */; };
+		4491D17E20748E6A004A0BC5 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17520748E6A004A0BC5 /* rewrite.def */; };
+		4491D17F20748E6A004A0BC5 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17620748E6A004A0BC5 /* left-id.def */; };
+		4491D18020748E6A004A0BC5 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17720748E6A004A0BC5 /* pos-id.def */; };
+		4491D18120748E6A004A0BC5 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17820748E6A004A0BC5 /* matrix.bin */; };
+		4491D18220748E6A004A0BC5 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17920748E6A004A0BC5 /* unk.dic */; };
+		4491D18320748E6A004A0BC5 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17A20748E6A004A0BC5 /* sys.dic */; };
+		4491D18420748E6A004A0BC5 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17B20748E6A004A0BC5 /* dicrc */; };
+		4491D18520748E6A004A0BC5 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17C20748E6A004A0BC5 /* right-id.def */; };
+		4491D18620748E6A004A0BC5 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4491D17D20748E6A004A0BC5 /* char.bin */; };
+		4491D18820748E89004A0BC5 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 4491D18720748E89004A0BC5 /* mecabrc */; };
+		4491D18920749036004A0BC5 /* mecab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; };
+		4491D18A20749036004A0BC5 /* mecab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4491D17120748DAD004A0BC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44C74468207357D7008F46FD;
+			remoteInfo = mecab;
+		};
+		4491D18B20749036004A0BC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 44C74467207357D7008F46FD;
+			remoteInfo = mecab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4491D15920748BE4004A0BC5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4491D18A20749036004A0BC5 /* mecab.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		440E7D2820748A190003882E /* mecab-ios-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mecab-ios-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		440E7D2B20748A190003882E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		440E7D2D20748A190003882E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		440E7D3020748A190003882E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		440E7D3220748A1A0003882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		440E7D3520748A1A0003882E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		440E7D3720748A1A0003882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4491D15A20748C0F004A0BC5 /* mecab-ios-sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mecab-ios-sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		4491D15B20748C10004A0BC5 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		4491D15C20748C10004A0BC5 /* Mecab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mecab.h; sourceTree = "<group>"; };
+		4491D15D20748C10004A0BC5 /* Mecab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mecab.m; sourceTree = "<group>"; };
+		4491D15E20748C10004A0BC5 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		4491D16220748C5F004A0BC5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mecab.xcodeproj; path = "mecab-ios/mecab.xcodeproj"; sourceTree = "<group>"; };
+		4491D17520748E6A004A0BC5 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
+		4491D17620748E6A004A0BC5 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
+		4491D17720748E6A004A0BC5 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
+		4491D17820748E6A004A0BC5 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
+		4491D17920748E6A004A0BC5 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
+		4491D17A20748E6A004A0BC5 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
+		4491D17B20748E6A004A0BC5 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
+		4491D17C20748E6A004A0BC5 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
+		4491D17D20748E6A004A0BC5 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
+		4491D18720748E89004A0BC5 /* mecabrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mecabrc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		440E7D2520748A190003882E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4491D16320748C5F004A0BC5 /* libiconv.tbd in Frameworks */,
+				4491D18920749036004A0BC5 /* mecab.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		440E7D1F20748A190003882E = {
+			isa = PBXGroup;
+			children = (
+				440E7D2A20748A190003882E /* mecab-ios-sample */,
+				4491D17320748DCA004A0BC5 /* Resources */,
+				4491D16C20748D96004A0BC5 /* Other Sources */,
+				440E7D2920748A190003882E /* Products */,
+				4491D16120748C5F004A0BC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		440E7D2920748A190003882E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				440E7D2820748A190003882E /* mecab-ios-sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		440E7D2A20748A190003882E /* mecab-ios-sample */ = {
+			isa = PBXGroup;
+			children = (
+				440E7D2B20748A190003882E /* AppDelegate.swift */,
+				440E7D2D20748A190003882E /* ViewController.swift */,
+				440E7D2F20748A190003882E /* Main.storyboard */,
+				440E7D3420748A1A0003882E /* LaunchScreen.storyboard */,
+				440E7D3220748A1A0003882E /* Assets.xcassets */,
+				440E7D3720748A1A0003882E /* Info.plist */,
+				4491D15A20748C0F004A0BC5 /* mecab-ios-sample-Bridging-Header.h */,
+			);
+			path = "mecab-ios-sample";
+			sourceTree = "<group>";
+		};
+		4491D16120748C5F004A0BC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4491D16220748C5F004A0BC5 /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4491D16420748CAA004A0BC5 /* Mecab */ = {
+			isa = PBXGroup;
+			children = (
+				4491D15C20748C10004A0BC5 /* Mecab.h */,
+				4491D15D20748C10004A0BC5 /* Mecab.m */,
+				4491D15E20748C10004A0BC5 /* Node.h */,
+				4491D15B20748C10004A0BC5 /* Node.m */,
+			);
+			name = Mecab;
+			path = "mecab-ios-sample";
+			sourceTree = "<group>";
+		};
+		4491D16C20748D96004A0BC5 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */,
+				4491D16420748CAA004A0BC5 /* Mecab */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		4491D16E20748DAD004A0BC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4491D17220748DAD004A0BC5 /* mecab.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4491D17320748DCA004A0BC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4491D18720748E89004A0BC5 /* mecabrc */,
+				4491D17420748E6A004A0BC5 /* ipadic */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4491D17420748E6A004A0BC5 /* ipadic */ = {
+			isa = PBXGroup;
+			children = (
+				4491D17520748E6A004A0BC5 /* rewrite.def */,
+				4491D17620748E6A004A0BC5 /* left-id.def */,
+				4491D17720748E6A004A0BC5 /* pos-id.def */,
+				4491D17820748E6A004A0BC5 /* matrix.bin */,
+				4491D17920748E6A004A0BC5 /* unk.dic */,
+				4491D17A20748E6A004A0BC5 /* sys.dic */,
+				4491D17B20748E6A004A0BC5 /* dicrc */,
+				4491D17C20748E6A004A0BC5 /* right-id.def */,
+				4491D17D20748E6A004A0BC5 /* char.bin */,
+			);
+			name = ipadic;
+			path = "mecab-ios/ipadic";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		440E7D2720748A190003882E /* mecab-ios-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 440E7D3A20748A1A0003882E /* Build configuration list for PBXNativeTarget "mecab-ios-sample" */;
+			buildPhases = (
+				440E7D2420748A190003882E /* Sources */,
+				440E7D2520748A190003882E /* Frameworks */,
+				440E7D2620748A190003882E /* Resources */,
+				4491D15920748BE4004A0BC5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4491D18C20749036004A0BC5 /* PBXTargetDependency */,
+			);
+			name = "mecab-ios-sample";
+			productName = "mecab-ios-sample";
+			productReference = 440E7D2820748A190003882E /* mecab-ios-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		440E7D2020748A190003882E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Landon Epps";
+				TargetAttributes = {
+					440E7D2720748A190003882E = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 440E7D2320748A190003882E /* Build configuration list for PBXProject "mecab-ios-sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 440E7D1F20748A190003882E;
+			productRefGroup = 440E7D2920748A190003882E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4491D16E20748DAD004A0BC5 /* Products */;
+					ProjectRef = 4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				440E7D2720748A190003882E /* mecab-ios-sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4491D17220748DAD004A0BC5 /* mecab.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mecab.framework;
+			remoteRef = 4491D17120748DAD004A0BC5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		440E7D2620748A190003882E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4491D17F20748E6A004A0BC5 /* left-id.def in Resources */,
+				4491D18620748E6A004A0BC5 /* char.bin in Resources */,
+				4491D18020748E6A004A0BC5 /* pos-id.def in Resources */,
+				4491D18520748E6A004A0BC5 /* right-id.def in Resources */,
+				440E7D3620748A1A0003882E /* LaunchScreen.storyboard in Resources */,
+				4491D18320748E6A004A0BC5 /* sys.dic in Resources */,
+				4491D18420748E6A004A0BC5 /* dicrc in Resources */,
+				4491D18220748E6A004A0BC5 /* unk.dic in Resources */,
+				440E7D3320748A1A0003882E /* Assets.xcassets in Resources */,
+				4491D17E20748E6A004A0BC5 /* rewrite.def in Resources */,
+				4491D18820748E89004A0BC5 /* mecabrc in Resources */,
+				440E7D3120748A190003882E /* Main.storyboard in Resources */,
+				4491D18120748E6A004A0BC5 /* matrix.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		440E7D2420748A190003882E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440E7D2E20748A190003882E /* ViewController.swift in Sources */,
+				440E7D2C20748A190003882E /* AppDelegate.swift in Sources */,
+				4491D16020748C10004A0BC5 /* Mecab.m in Sources */,
+				4491D15F20748C10004A0BC5 /* Node.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4491D18C20749036004A0BC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mecab;
+			targetProxy = 4491D18B20749036004A0BC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		440E7D2F20748A190003882E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440E7D3020748A190003882E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		440E7D3420748A1A0003882E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440E7D3520748A1A0003882E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		440E7D3820748A1A0003882E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		440E7D3920748A1A0003882E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		440E7D3B20748A1A0003882E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNHYA375TJ;
+				HEADER_SEARCH_PATHS = "mecab-ios/**";
+				INFOPLIST_FILE = "mecab-ios-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.landonepps.mecab-ios-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mecab-ios-sample/mecab-ios-sample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		440E7D3C20748A1A0003882E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNHYA375TJ;
+				HEADER_SEARCH_PATHS = "mecab-ios/**";
+				INFOPLIST_FILE = "mecab-ios-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.landonepps.mecab-ios-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mecab-ios-sample/mecab-ios-sample-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		440E7D2320748A190003882E /* Build configuration list for PBXProject "mecab-ios-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440E7D3820748A1A0003882E /* Debug */,
+				440E7D3920748A1A0003882E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		440E7D3A20748A1A0003882E /* Build configuration list for PBXNativeTarget "mecab-ios-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440E7D3B20748A1A0003882E /* Debug */,
+				440E7D3C20748A1A0003882E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 440E7D2020748A190003882E /* Project object */;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mecab_ios_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="upQ-mC-xZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V3I-I2-Wrm">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f6Q-ML-4dp">
+                                <rect key="frame" x="16" y="112" width="343" height="535"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKU-7q-gbO">
+                                <rect key="frame" x="166" y="74" width="43" height="30"/>
+                                <state key="normal" title="Parse!"/>
+                                <connections>
+                                    <action selector="parse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7g-9X-SPu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oMi-WW-yqK" firstAttribute="trailing" secondItem="f6Q-ML-4dp" secondAttribute="trailing" constant="16" id="0Lt-xv-yE3"/>
+                            <constraint firstItem="oMi-WW-yqK" firstAttribute="bottom" secondItem="f6Q-ML-4dp" secondAttribute="bottom" constant="20" id="FNN-M0-ZVt"/>
+                            <constraint firstItem="iKU-7q-gbO" firstAttribute="top" secondItem="V3I-I2-Wrm" secondAttribute="bottom" constant="8" id="PKa-Jg-IWU"/>
+                            <constraint firstItem="f6Q-ML-4dp" firstAttribute="leading" secondItem="oMi-WW-yqK" secondAttribute="leading" constant="16" id="QEr-Zk-sOv"/>
+                            <constraint firstItem="oMi-WW-yqK" firstAttribute="trailing" secondItem="V3I-I2-Wrm" secondAttribute="trailing" constant="16" id="hmi-g2-PIt"/>
+                            <constraint firstItem="f6Q-ML-4dp" firstAttribute="top" secondItem="iKU-7q-gbO" secondAttribute="bottom" constant="8" id="mJt-rp-CXz"/>
+                            <constraint firstItem="V3I-I2-Wrm" firstAttribute="leading" secondItem="oMi-WW-yqK" secondAttribute="leading" constant="16" id="oeP-CD-t7B"/>
+                            <constraint firstItem="V3I-I2-Wrm" firstAttribute="top" secondItem="oMi-WW-yqK" secondAttribute="top" constant="16" id="pMH-EZ-y9c"/>
+                            <constraint firstItem="iKU-7q-gbO" firstAttribute="centerX" secondItem="upQ-mC-xZ9" secondAttribute="centerX" id="ux3-kM-p2m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oMi-WW-yqK"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="V3I-I2-Wrm" id="VKp-E8-erT"/>
+                        <outlet property="outputTextArea" destination="f6Q-ML-4dp" id="gFQ-7X-ezW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
