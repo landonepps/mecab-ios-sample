@@ -18,16 +18,15 @@
 		4491D18920749036004A0BC5 /* mecab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; };
 		4491D18A20749036004A0BC5 /* mecab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44DD1B622074F0C500FCEBA7 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DD1B612074F0C500FCEBA7 /* Mecab.m */; };
-		44DD1BA62075C56A00FCEBA7 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1B9B2075C56A00FCEBA7 /* rewrite.def */; };
-		44DD1BA72075C56A00FCEBA7 /* model.bin in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1B9C2075C56A00FCEBA7 /* model.bin */; };
-		44DD1BA82075C56A00FCEBA7 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1B9D2075C56A00FCEBA7 /* left-id.def */; };
-		44DD1BA92075C56A00FCEBA7 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1B9E2075C56A00FCEBA7 /* pos-id.def */; };
-		44DD1BAA2075C56A00FCEBA7 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1B9F2075C56A00FCEBA7 /* matrix.bin */; };
-		44DD1BAB2075C56A00FCEBA7 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BA02075C56A00FCEBA7 /* unk.dic */; };
-		44DD1BAC2075C56A00FCEBA7 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BA12075C56A00FCEBA7 /* sys.dic */; };
-		44DD1BAD2075C56A00FCEBA7 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BA22075C56A00FCEBA7 /* dicrc */; };
-		44DD1BAE2075C56A00FCEBA7 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BA32075C56A00FCEBA7 /* right-id.def */; };
-		44DD1BAF2075C56A00FCEBA7 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BA42075C56A00FCEBA7 /* char.bin */; };
+		44DD1BBC2075DCE500FCEBA7 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB32075DCE500FCEBA7 /* rewrite.def */; };
+		44DD1BBD2075DCE500FCEBA7 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB42075DCE500FCEBA7 /* left-id.def */; };
+		44DD1BBE2075DCE500FCEBA7 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB52075DCE500FCEBA7 /* pos-id.def */; };
+		44DD1BBF2075DCE500FCEBA7 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB62075DCE500FCEBA7 /* matrix.bin */; };
+		44DD1BC02075DCE500FCEBA7 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB72075DCE500FCEBA7 /* unk.dic */; };
+		44DD1BC12075DCE500FCEBA7 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB82075DCE500FCEBA7 /* sys.dic */; };
+		44DD1BC22075DCE500FCEBA7 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB92075DCE500FCEBA7 /* dicrc */; };
+		44DD1BC32075DCE500FCEBA7 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BBA2075DCE500FCEBA7 /* right-id.def */; };
+		44DD1BC42075DCE500FCEBA7 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BBB2075DCE500FCEBA7 /* char.bin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,16 +76,15 @@
 		4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mecab.xcodeproj; path = "mecab-ios/mecab.xcodeproj"; sourceTree = "<group>"; };
 		4491D18720748E89004A0BC5 /* mecabrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mecabrc; sourceTree = "<group>"; };
 		44DD1B612074F0C500FCEBA7 /* Mecab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mecab.m; sourceTree = "<group>"; };
-		44DD1B9B2075C56A00FCEBA7 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
-		44DD1B9C2075C56A00FCEBA7 /* model.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = model.bin; sourceTree = "<group>"; };
-		44DD1B9D2075C56A00FCEBA7 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
-		44DD1B9E2075C56A00FCEBA7 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
-		44DD1B9F2075C56A00FCEBA7 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
-		44DD1BA02075C56A00FCEBA7 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
-		44DD1BA12075C56A00FCEBA7 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
-		44DD1BA22075C56A00FCEBA7 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
-		44DD1BA32075C56A00FCEBA7 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
-		44DD1BA42075C56A00FCEBA7 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
+		44DD1BB32075DCE500FCEBA7 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
+		44DD1BB42075DCE500FCEBA7 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
+		44DD1BB52075DCE500FCEBA7 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
+		44DD1BB62075DCE500FCEBA7 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
+		44DD1BB72075DCE500FCEBA7 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
+		44DD1BB82075DCE500FCEBA7 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
+		44DD1BB92075DCE500FCEBA7 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
+		44DD1BBA2075DCE500FCEBA7 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
+		44DD1BBB2075DCE500FCEBA7 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,28 +173,27 @@
 		4491D17320748DCA004A0BC5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				44DD1B9A2075C56A00FCEBA7 /* jumandic */,
+				44DD1BB22075DCE500FCEBA7 /* ipadic */,
 				4491D18720748E89004A0BC5 /* mecabrc */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		44DD1B9A2075C56A00FCEBA7 /* jumandic */ = {
+		44DD1BB22075DCE500FCEBA7 /* ipadic */ = {
 			isa = PBXGroup;
 			children = (
-				44DD1B9B2075C56A00FCEBA7 /* rewrite.def */,
-				44DD1B9C2075C56A00FCEBA7 /* model.bin */,
-				44DD1B9D2075C56A00FCEBA7 /* left-id.def */,
-				44DD1B9E2075C56A00FCEBA7 /* pos-id.def */,
-				44DD1B9F2075C56A00FCEBA7 /* matrix.bin */,
-				44DD1BA02075C56A00FCEBA7 /* unk.dic */,
-				44DD1BA12075C56A00FCEBA7 /* sys.dic */,
-				44DD1BA22075C56A00FCEBA7 /* dicrc */,
-				44DD1BA32075C56A00FCEBA7 /* right-id.def */,
-				44DD1BA42075C56A00FCEBA7 /* char.bin */,
+				44DD1BB32075DCE500FCEBA7 /* rewrite.def */,
+				44DD1BB42075DCE500FCEBA7 /* left-id.def */,
+				44DD1BB52075DCE500FCEBA7 /* pos-id.def */,
+				44DD1BB62075DCE500FCEBA7 /* matrix.bin */,
+				44DD1BB72075DCE500FCEBA7 /* unk.dic */,
+				44DD1BB82075DCE500FCEBA7 /* sys.dic */,
+				44DD1BB92075DCE500FCEBA7 /* dicrc */,
+				44DD1BBA2075DCE500FCEBA7 /* right-id.def */,
+				44DD1BBB2075DCE500FCEBA7 /* char.bin */,
 			);
-			name = jumandic;
-			path = "mecab-ios/jumandic";
+			name = ipadic;
+			path = "mecab-ios/ipadic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,20 +273,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DD1BAE2075C56A00FCEBA7 /* right-id.def in Resources */,
-				440E7D3620748A1A0003882E /* LaunchScreen.storyboard in Resources */,
 				440E7D3320748A1A0003882E /* Assets.xcassets in Resources */,
-				44DD1BAF2075C56A00FCEBA7 /* char.bin in Resources */,
+				44DD1BC22075DCE500FCEBA7 /* dicrc in Resources */,
+				44DD1BC32075DCE500FCEBA7 /* right-id.def in Resources */,
+				44DD1BC02075DCE500FCEBA7 /* unk.dic in Resources */,
+				440E7D3620748A1A0003882E /* LaunchScreen.storyboard in Resources */,
+				44DD1BC42075DCE500FCEBA7 /* char.bin in Resources */,
 				4491D18820748E89004A0BC5 /* mecabrc in Resources */,
-				44DD1BAB2075C56A00FCEBA7 /* unk.dic in Resources */,
-				44DD1BA92075C56A00FCEBA7 /* pos-id.def in Resources */,
-				44DD1BAA2075C56A00FCEBA7 /* matrix.bin in Resources */,
-				44DD1BAD2075C56A00FCEBA7 /* dicrc in Resources */,
+				44DD1BBE2075DCE500FCEBA7 /* pos-id.def in Resources */,
 				440E7D3120748A190003882E /* Main.storyboard in Resources */,
-				44DD1BA62075C56A00FCEBA7 /* rewrite.def in Resources */,
-				44DD1BA82075C56A00FCEBA7 /* left-id.def in Resources */,
-				44DD1BAC2075C56A00FCEBA7 /* sys.dic in Resources */,
-				44DD1BA72075C56A00FCEBA7 /* model.bin in Resources */,
+				44DD1BC12075DCE500FCEBA7 /* sys.dic in Resources */,
+				44DD1BBC2075DCE500FCEBA7 /* rewrite.def in Resources */,
+				44DD1BBF2075DCE500FCEBA7 /* matrix.bin in Resources */,
+				44DD1BBD2075DCE500FCEBA7 /* left-id.def in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
