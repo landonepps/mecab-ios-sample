@@ -15,12 +15,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var outputTextArea: UITextView!
     
-    @IBAction func parse(_ sender: UIButton) {
+    @IBAction func parse() {
         var outputText = ""
         if let input = inputField.text {
             let nodes = mecab.parseToNode(with: input) as! [Node]
             for node in nodes {
-                outputText += "\(node.surface!) [\(node.partOfSpeech()!)] "
+                if let surface = node.surface {
+                    outputText += "\(surface)\n"
+                }
+                if let reading = node.reading() {
+                    outputText += "読み: \(reading)\n"
+                }
+                if let pos = node.partOfSpeech() {
+                    outputText += "PoS: \(pos)\n"
+                }
+                if let pos1 = node.partOfSpeechSubtype1(), pos1 != "*" {
+                    outputText += "PoS1: \(pos1)\n"
+                }
+                if let pos2 = node.partOfSpeechSubtype2(), pos2 != "*" {
+                    outputText += "PoS2: \(pos2)\n"
+                }
+                if let pos3 = node.partOfSpeechSubtype3(), pos3 != "*" {
+                    outputText += "PoS3: \(pos3)\n"
+                }
+                outputText += "\n"
             }
         }
         outputTextArea.text = outputText

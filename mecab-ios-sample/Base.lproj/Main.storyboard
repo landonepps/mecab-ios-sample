@@ -23,6 +23,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="parse" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="OwU-CA-bQy"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f6Q-ML-4dp">
                                 <rect key="frame" x="16" y="112" width="343" height="535"/>
@@ -34,7 +37,7 @@
                                 <rect key="frame" x="166" y="74" width="43" height="30"/>
                                 <state key="normal" title="Parse!"/>
                                 <connections>
-                                    <action selector="parse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7g-9X-SPu"/>
+                                    <action selector="parse" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHH-4g-L5G"/>
                                 </connections>
                             </button>
                         </subviews>

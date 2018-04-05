@@ -5,9 +5,8 @@
 //  Copyright 2010 FLCL.jp. All rights reserved.
 //
 
-#include <mecab.h>
+#include <mecab/mecab.h>
 #import <UIKit/UIKit.h>
-
 
 @interface Mecab : NSObject {
 	mecab_t *mecab;
