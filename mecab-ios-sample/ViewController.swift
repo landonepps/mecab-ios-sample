@@ -20,25 +20,13 @@ class ViewController: UIViewController {
         if let input = inputField.text {
             let nodes = mecab.parseToNode(with: input) as! [Node]
             for node in nodes {
-                if let surface = node.surface {
-                    outputText += "\(surface)\n"
-                }
-                if let reading = node.reading() {
-                    outputText += "読み: \(reading)\n"
-                }
-                if let pos = node.partOfSpeech() {
-                    outputText += "PoS: \(pos)\n"
-                }
-                if let pos1 = node.partOfSpeechSubtype1(), pos1 != "*" {
-                    outputText += "PoS1: \(pos1)\n"
-                }
-                if let pos2 = node.partOfSpeechSubtype2(), pos2 != "*" {
-                    outputText += "PoS2: \(pos2)\n"
-                }
-                if let pos3 = node.partOfSpeechSubtype3(), pos3 != "*" {
-                    outputText += "PoS3: \(pos3)\n"
-                }
-                outputText += "\n"
+                outputText = outputText + "\(node.surface ?? "*")\n" +
+                    "読み: \(node.reading() ?? "*")\n" +
+                    "原形: \(node.originalForm() ?? "*")\n" +
+                    "PoS: \(node.partOfSpeech() ?? "*") " +
+                    "\(node.partOfSpeechSubtype1() ?? "*") " +
+                    "\(node.partOfSpeechSubtype2() ?? "*") " +
+                "\(node.partOfSpeechSubtype3() ?? "*")\n\n"
             }
         }
         outputTextArea.text = outputText
