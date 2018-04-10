@@ -26,7 +26,7 @@ class ViewController: UIViewController {
                     "PoS: \(node.partOfSpeech() ?? "*") " +
                     "\(node.partOfSpeechSubtype1() ?? "*") " +
                     "\(node.partOfSpeechSubtype2() ?? "*") " +
-                "\(node.partOfSpeechSubtype3() ?? "*")\n\n"
+                    "\(node.partOfSpeechSubtype3() ?? "*")\n\n"
             }
         }
         outputTextArea.text = outputText
