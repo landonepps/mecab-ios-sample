@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     @IBAction func parse() {
         var outputText = ""
         if let input = inputField.text {
+            // parse the text from inputField
             let nodes = mecab.parseToNode(with: input) as! [Node]
+            
+            // extract information from each node (token)
             for node in nodes {
                 outputText = outputText + "\(node.surface ?? "*")\n" +
                     "読み: \(node.reading() ?? "*")\n" +
@@ -30,6 +33,8 @@ class ViewController: UIViewController {
             }
         }
         outputTextArea.text = outputText
+        // hide the keyboard
+        inputField.resignFirstResponder()
     }
     
     override func viewDidLoad() {
