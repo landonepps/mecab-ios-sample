@@ -17,6 +17,7 @@
 		4491D18820748E89004A0BC5 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 4491D18720748E89004A0BC5 /* mecabrc */; };
 		4491D18920749036004A0BC5 /* mecab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; };
 		4491D18A20749036004A0BC5 /* mecab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4499F19C2080483A00302A25 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499F19B2080483A00302A25 /* Tokenizer.swift */; };
 		44DD1B622074F0C500FCEBA7 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DD1B612074F0C500FCEBA7 /* Mecab.m */; };
 		44DD1BBC2075DCE500FCEBA7 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB32075DCE500FCEBA7 /* rewrite.def */; };
 		44DD1BBD2075DCE500FCEBA7 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB42075DCE500FCEBA7 /* left-id.def */; };
@@ -75,6 +76,7 @@
 		4491D16220748C5F004A0BC5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mecab.xcodeproj; path = "mecab-ios/mecab.xcodeproj"; sourceTree = "<group>"; };
 		4491D18720748E89004A0BC5 /* mecabrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mecabrc; sourceTree = "<group>"; };
+		4499F19B2080483A00302A25 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
 		44DD1B612074F0C500FCEBA7 /* Mecab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mecab.m; sourceTree = "<group>"; };
 		44DD1BB32075DCE500FCEBA7 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
 		44DD1BB42075DCE500FCEBA7 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				440E7D2B20748A190003882E /* AppDelegate.swift */,
 				440E7D2D20748A190003882E /* ViewController.swift */,
+				4499F19B2080483A00302A25 /* Tokenizer.swift */,
 				440E7D2F20748A190003882E /* Main.storyboard */,
 				440E7D3420748A1A0003882E /* LaunchScreen.storyboard */,
 				440E7D3220748A1A0003882E /* Assets.xcassets */,
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				440E7D2E20748A190003882E /* ViewController.swift in Sources */,
+				4499F19C2080483A00302A25 /* Tokenizer.swift in Sources */,
 				440E7D2C20748A190003882E /* AppDelegate.swift in Sources */,
 				44DD1B622074F0C500FCEBA7 /* Mecab.m in Sources */,
 				4491D15F20748C10004A0BC5 /* Node.m in Sources */,

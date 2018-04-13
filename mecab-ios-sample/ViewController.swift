@@ -10,26 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let mecab = Mecab()
+    let tokenizer = Tokenizer()
     
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var outputTextArea: UITextView!
     
     @IBAction func parse() {
         var outputText = ""
-        if let input = inputField.text {
+        if let text = inputField.text {
             // parse the text from inputField
-            let nodes = mecab.parseToNode(with: input) as! [Node]
+            let tokens = tokenizer.parse(text: text)
             
-            // extract information from each node (token)
-            for node in nodes {
-                outputText = outputText + "\(node.surface ?? "*")\n" +
-                    "読み: \(node.reading() ?? "*")\n" +
-                    "原形: \(node.originalForm() ?? "*")\n" +
-                    "PoS: \(node.partOfSpeech() ?? "*") " +
-                    "\(node.partOfSpeechSubtype1() ?? "*") " +
-                    "\(node.partOfSpeechSubtype2() ?? "*") " +
-                    "\(node.partOfSpeechSubtype3() ?? "*")\n\n"
+            // append information from each token
+            for token: Token in tokens {
+                outputText = outputText + "\(token.surface)\n" +
+                    "読み: \(token.reading ?? "<none>")\n" + // some tokens do not have a reading, so reading is an optional
+                    "原形: \(token.originalForm ?? "<none>")\n" + // as is originalForm
+                    "品詞: \(token.partsOfSpeech.joined(separator: "、"))\n\n"
             }
         }
         outputTextArea.text = outputText
