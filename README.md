@@ -15,7 +15,7 @@ Use the following commands to clone and get the mecab-ios submodule as well:
 
 3. Select `Add Files to "ProjectName"...` from the Xcode menu and choose `mecab.xcodeproj` in the mecab-ios folder created by adding the submodule. This will import the project and all the necessary files.
 
-4. Drag `mecabrc` from the top directory of this repository's into your project. Make sure to select `Copy items if needed`. Drag `Mecab.h`, `Mecab.m`, `Node.h`, and `Node.m` from the `mecab-ios-sample` folder in this repository into your project. Make sure `Copy items if needed` is still selected. Click `Create Bridging Header` when prompted.
+4. Drag `mecabrc` from the top directory of this repository into your project. Make sure to select `Copy items if needed`. Drag `Mecab.h`, `Mecab.m`, `Node.h`, and `Node.m` from the `mecab-ios-sample` folder in this repository into your project. Make sure `Copy items if needed` is still selected. Click `Create Bridging Header` when prompted.
 
 5. Open newly created bridging header (`ProjectName-Bridging-Header.h`) and add the following:
 ```
