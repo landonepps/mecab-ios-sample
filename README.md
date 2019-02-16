@@ -30,7 +30,6 @@ Use the following commands to clone and get the mecab-ios submodule as well:
 8. Still in `Build Phases`, add the following under `Link Binary With Libraries`:
 
  * libiconv.tbd
- * libstdc++.tbd
 
 9. Finally, open the `Build Settings` tab, and add `mecab-ios/**` under "Header Search Paths".
 
