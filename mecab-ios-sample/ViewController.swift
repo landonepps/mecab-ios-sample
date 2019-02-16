@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             
             // append information from each token
             for token: Token in tokens {
-                outputText = outputText + "\(token.surface)\n" +
+                outputText = outputText + "\(token.surface!)\n" +
                     "読み: \(token.reading ?? "<none>")\n" + // some tokens do not have a reading, so reading is an optional
                     "原形: \(token.originalForm ?? "<none>")\n" + // as is originalForm
                     "品詞: \(token.partsOfSpeech.joined(separator: "、"))\n\n"
