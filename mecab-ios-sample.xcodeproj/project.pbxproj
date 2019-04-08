@@ -12,13 +12,11 @@
 		440E7D3120748A190003882E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D2F20748A190003882E /* Main.storyboard */; };
 		440E7D3320748A1A0003882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D3220748A1A0003882E /* Assets.xcassets */; };
 		440E7D3620748A1A0003882E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E7D3420748A1A0003882E /* LaunchScreen.storyboard */; };
-		4491D15F20748C10004A0BC5 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491D15B20748C10004A0BC5 /* Node.m */; };
-		4491D16320748C5F004A0BC5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D16220748C5F004A0BC5 /* libiconv.tbd */; };
+		4426E70F225B392200AA2420 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426E70E225B392200AA2420 /* Token.swift */; };
 		4491D18820748E89004A0BC5 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 4491D18720748E89004A0BC5 /* mecabrc */; };
 		4491D18920749036004A0BC5 /* mecab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; };
 		4491D18A20749036004A0BC5 /* mecab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4491D17220748DAD004A0BC5 /* mecab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4499F19C2080483A00302A25 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499F19B2080483A00302A25 /* Tokenizer.swift */; };
-		44DD1B622074F0C500FCEBA7 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DD1B612074F0C500FCEBA7 /* Mecab.m */; };
 		44DD1BBC2075DCE500FCEBA7 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB32075DCE500FCEBA7 /* rewrite.def */; };
 		44DD1BBD2075DCE500FCEBA7 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB42075DCE500FCEBA7 /* left-id.def */; };
 		44DD1BBE2075DCE500FCEBA7 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 44DD1BB52075DCE500FCEBA7 /* pos-id.def */; };
@@ -69,15 +67,10 @@
 		440E7D3220748A1A0003882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		440E7D3520748A1A0003882E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		440E7D3720748A1A0003882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4491D15A20748C0F004A0BC5 /* mecab-ios-sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mecab-ios-sample-Bridging-Header.h"; sourceTree = "<group>"; };
-		4491D15B20748C10004A0BC5 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
-		4491D15C20748C10004A0BC5 /* Mecab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mecab.h; sourceTree = "<group>"; };
-		4491D15E20748C10004A0BC5 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		4491D16220748C5F004A0BC5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		4426E70E225B392200AA2420 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mecab.xcodeproj; path = "mecab-ios/mecab.xcodeproj"; sourceTree = "<group>"; };
 		4491D18720748E89004A0BC5 /* mecabrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mecabrc; sourceTree = "<group>"; };
 		4499F19B2080483A00302A25 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
-		44DD1B612074F0C500FCEBA7 /* Mecab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mecab.m; sourceTree = "<group>"; };
 		44DD1BB32075DCE500FCEBA7 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
 		44DD1BB42075DCE500FCEBA7 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
 		44DD1BB52075DCE500FCEBA7 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
@@ -94,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4491D16320748C5F004A0BC5 /* libiconv.tbd in Frameworks */,
 				4491D18920749036004A0BC5 /* mecab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,11 +119,11 @@
 				440E7D2B20748A190003882E /* AppDelegate.swift */,
 				440E7D2D20748A190003882E /* ViewController.swift */,
 				4499F19B2080483A00302A25 /* Tokenizer.swift */,
+				4426E70E225B392200AA2420 /* Token.swift */,
 				440E7D2F20748A190003882E /* Main.storyboard */,
 				440E7D3420748A1A0003882E /* LaunchScreen.storyboard */,
 				440E7D3220748A1A0003882E /* Assets.xcassets */,
 				440E7D3720748A1A0003882E /* Info.plist */,
-				4491D15A20748C0F004A0BC5 /* mecab-ios-sample-Bridging-Header.h */,
 			);
 			path = "mecab-ios-sample";
 			sourceTree = "<group>";
@@ -139,28 +131,14 @@
 		4491D16120748C5F004A0BC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4491D16220748C5F004A0BC5 /* libiconv.tbd */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4491D16420748CAA004A0BC5 /* Mecab */ = {
-			isa = PBXGroup;
-			children = (
-				4491D15C20748C10004A0BC5 /* Mecab.h */,
-				44DD1B612074F0C500FCEBA7 /* Mecab.m */,
-				4491D15E20748C10004A0BC5 /* Node.h */,
-				4491D15B20748C10004A0BC5 /* Node.m */,
-			);
-			name = Mecab;
-			path = "mecab-ios-sample";
 			sourceTree = "<group>";
 		};
 		4491D16C20748D96004A0BC5 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
 				4491D16D20748DAD004A0BC5 /* mecab.xcodeproj */,
-				4491D16420748CAA004A0BC5 /* Mecab */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -233,7 +211,7 @@
 				TargetAttributes = {
 					440E7D2720748A190003882E = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -302,8 +280,7 @@
 				440E7D2E20748A190003882E /* ViewController.swift in Sources */,
 				4499F19C2080483A00302A25 /* Tokenizer.swift in Sources */,
 				440E7D2C20748A190003882E /* AppDelegate.swift in Sources */,
-				44DD1B622074F0C500FCEBA7 /* Mecab.m in Sources */,
-				4491D15F20748C10004A0BC5 /* Node.m in Sources */,
+				4426E70F225B392200AA2420 /* Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,9 +447,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.landonepps.mecab-ios-sample-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "mecab-ios-sample/mecab-ios-sample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -496,8 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.landonepps.mecab-ios-sample-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "mecab-ios-sample/mecab-ios-sample-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

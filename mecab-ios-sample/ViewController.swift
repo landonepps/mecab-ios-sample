@@ -23,10 +23,11 @@ class ViewController: UIViewController {
             
             // append information from each token
             for token: Token in tokens {
-                outputText = outputText + "\(token.surface!)\n" +
-                    "読み: \(token.reading ?? "<none>")\n" + // some tokens do not have a reading, so reading is an optional
-                    "原形: \(token.originalForm ?? "<none>")\n" + // as is originalForm
-                    "品詞: \(token.partsOfSpeech.joined(separator: "、"))\n\n"
+                outputText = outputText + "\(token.surface)\n" + // all tokens have a surface (the exact substring)
+                    "読み: \(token.reading ?? "<none>")\n" + // but not all tokens have the other features, so they're optional
+                    "原形: \(token.originalForm ?? "<none>")\n" +
+                    "活用形: \(token.inflection ?? "<none>")\n" +
+                    "品詞: \(token.partsOfSpeech.joined(separator: "、"))\n\n" // if there are no parts of speech, it's an empty array, not nil
             }
         }
         outputTextArea.text = outputText
