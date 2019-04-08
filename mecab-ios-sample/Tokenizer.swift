@@ -30,7 +30,7 @@ class Tokenizer {
      - parameter text: The String to be parsed.
      - returns: An array of Tokens. Each token represents a MeCab node.
     */
-    func parse(text: String) -> [Token] {
+    func parse(_ text: String) -> [Token] {
         if mecab == nil {
             guard let path = Bundle.main.resourcePath else {
                 // TODO: Path should never be nil, but is it proper to fatalError like this?

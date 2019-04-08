@@ -15,19 +15,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var outputTextArea: UITextView!
     
-    @IBAction func parse() {
+    @IBAction func tokenize() {
         var outputText = ""
         if let text = inputField.text {
             // parse the text from inputField
-            let tokens = tokenizer.parse(text: text)
+            let tokens = tokenizer.parse(text)
             
             // append information from each token
             for token: Token in tokens {
-                outputText = outputText + "\(token.surface)\n" + // all tokens have a surface (the exact substring)
-                    "読み: \(token.reading ?? "<none>")\n" + // but not all tokens have the other features, so they're optional
-                    "原形: \(token.originalForm ?? "<none>")\n" +
-                    "活用形: \(token.inflection ?? "<none>")\n" +
-                    "品詞: \(token.partsOfSpeech.joined(separator: "、"))\n\n" // if there are no parts of speech, it's an empty array, not nil
+                // all tokens have a surface property (the exact substring)
+                outputText += "\(token.surface)\n"
+                
+                // but the other properties aren't required, so they're optional
+                if let reading = token.reading {
+                    outputText += "読み: \(reading)\n"
+                }
+                
+                if let originalForm = token.originalForm {
+                    outputText += "原形: \(originalForm)\n"
+                }
+                
+                if let inflection = token.inflection {
+                    outputText += "活用形: \(inflection)\n"
+                }
+                outputText += "品詞: \(token.partsOfSpeech.joined(separator: "、"))\n\n" // if there are no parts of speech, it's an empty array, not nil
             }
         }
         outputTextArea.text = outputText
