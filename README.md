@@ -1,6 +1,8 @@
 # Mecab Sample for iOS
 Sample Swift project for MeCab. Updated for iOS 12.x and Swift 5.
 
+<img src="https://user-images.githubusercontent.com/1572318/55723208-68daf700-5a43-11e9-80bf-c97f831655e8.PNG" width="200px">
+
 Use the following command to clone and get the mecab-ios submodule as well:
 
 ```
