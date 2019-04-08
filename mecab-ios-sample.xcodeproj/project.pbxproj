@@ -437,7 +437,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
-				HEADER_SEARCH_PATHS = "mecab-ios/**";
 				INFOPLIST_FILE = "mecab-ios-sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,7 +461,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
-				HEADER_SEARCH_PATHS = "mecab-ios/**";
 				INFOPLIST_FILE = "mecab-ios-sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (

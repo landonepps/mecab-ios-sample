@@ -1,5 +1,5 @@
-# mecab-ios-sample
-Sample Swift project for MeCab. Updated for iOS 12.
+# Mecab Sample for iOS
+Sample Swift project for MeCab. Updated for iOS 12.x and Swift 5.
 
 Use the following command to clone and get the mecab-ios submodule as well:
 
