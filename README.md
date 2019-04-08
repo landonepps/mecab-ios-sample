@@ -17,15 +17,19 @@ Use the following commands to clone and get the mecab-ios submodule as well:
 
 4. Drag `mecabrc` from the top directory of this repository into your project. Make sure to select `Copy items if needed`.
 
-5. Open the `mecab-ios` folder in your project's folder and drag the `ipadic` folder into your project. It doesn't matter if you have `Copy items if needed` selected.
+5. Open the `mecab-ios` folder in your project's folder and drag the `ipadic` folder into your project. (The files are already in your project's directory. so it doesn't matter if you have `Copy items if needed` selected or not.)
 
 6. Click on your project file, go to the target's `General` tab, and add `mecab.framework` in the `Embedded Binaries` section near the bottom.
 
 7.  Make sure to `import mecab` wherever you need to use it.
 
-8.  You can now call MeCab's C functions directly from Swift -- e.g. `let mecab = mecab_new2("-d \(Bundle.main.resourcePath!)")`.
+8.  You can now call the MeCab library's functions directly from Swift – e.g.
 
-9.  Calling these functions directly is not ideal, so feel free to use the Swift wrappers that I wrote: `Tokenizer.swift` and `Token.swift`.
+```swift
+let mecab = mecab_new2("-d \(Bundle.main.resourcePath!)")
+```
+
+9.  Calling these functions directly is not ideal, so feel free to use the Swift wrappers that I made for this sample project: `Tokenizer.swift` and `Token.swift`.
 
 10. Clean and build.
 
