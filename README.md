@@ -3,7 +3,9 @@ Sample Swift project for MeCab. Updated for iOS 12.
 
 Use the following commands to clone and get the mecab-ios submodule as well:
 
-`git clone --recurse-submodules https://github.com/landonepps/mecab-ios-sample.git`
+```
+git clone --recurse-submodules https://github.com/landonepps/mecab-ios-sample.git
+```
 
 ## Setting up your own project
 
@@ -11,7 +13,9 @@ Use the following commands to clone and get the mecab-ios submodule as well:
 
 2. Add `mecab-ios` as a submodule by executing the following command in your project's repository:
 
-`git submodule add https://github.com/landonepps/mecab-ios.git`
+```
+git submodule add https://github.com/landonepps/mecab-ios.git
+```
 
 3. Select `Add Files to "ProjectName"...` from the Xcode menu and choose `mecab.xcodeproj` in the `mecab-ios` folder created by adding the submodule. This will import the project and all the necessary files.
 
