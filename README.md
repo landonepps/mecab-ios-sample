@@ -35,7 +35,7 @@ git submodule add https://github.com/landonepps/mecab-ios.git
 let mecab = mecab_new2("-d \(Bundle.main.resourcePath!)")
 ```
 
-9.  Calling these functions directly is not ideal, so feel free to use the Swift wrappers that I made for this sample project: `Tokenizer.swift` and `Token.swift`.
+9.  Dealing with MeCab directly is not ideal, so feel free to use the Swift wrappers that I made for this sample project: `Tokenizer.swift` and `Token.swift`.
 
 10. Clean and build.
 
